@@ -53,7 +53,7 @@ export async function generateQuiz() {
     return quiz.questions;
   } catch (error) {
     console.error("Error generating quiz:", error);
-    throw new Error("Failed to generate quiz questions");
+    throw error;
   }
 }
 
